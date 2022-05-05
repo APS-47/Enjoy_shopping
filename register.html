@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人注册</title>
+    <!-- 插入favicon图 多次更改记得ctrl+F5清除缓存-->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入初始化css样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入register的css样式文件 -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="w">
+        <!-- 头部 -->
+        <header>
+            <div class="register_logo">
+                <a href="index.html" title="悦享购商城">
+                    <img src="images/logo1.png" alt="">
+                    <img src="images/logo2.png" alt="">
+                </a>
+            </div>
+        </header>
+        <!-- 中间主体部分 -->
+        <div class="registerarea">
+            <h3>
+                注册新用户
+                <div class="login">我有账号，前往 <a href="#">登录</a></div>
+            </h3>
+            <div class="reg_form">
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="">手机号：</label>
+                            <input type="text" placeholder="请输入11位手机号码" id="phonenumber">
+                            <span class="message">请输入11位手机号码</span>
+                            <a href="#">获取短信验证码</a>
+                        </li>
+                        <li>
+                            <label for="">短信验证码：</label>
+                            <input type="text" placeholder="请输入6位验证码" id="dx">
+                            <span class="message">请输入6位验证码</span>
+                        </li>
+                        <li>
+                            <label for="">新建密码：</label>
+                            <input type="password" placeholder="密码长度不小于8位" id="pwd">
+                            <span class="message">请输入正确的密码格式</span>
+                        </li>
+                        <li class="safe">安全程度 <em>弱</em><em>中</em><em>强</em></li>
+                        <li>
+                            <label for="">确认密码：</label>
+                            <input type="password" placeholder="请再次输入密码" id="repwd">
+                            <span class="message">请再次输入密码</span>
+                        </li>
+                        <li class="agree">
+                            <input type="checkbox" id="check"> 同意协议并注册
+                            <a href="#">《用户协议》</a>
+                        </li>
+                        <li>
+                            <input class="btn" type="submit" value="提交注册">
+                        </li>
+                    </ul>
+                </form>
+                <script src="js/login.js"></script>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <footer>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a>|
+                    <a href="#">联系我们</a>|
+                    <a href="#">联系客服</a>|
+                    <a href="#">商家入驻</a>|
+                    <a href="#">营销中心</a>|
+                    <a href="#">手机悦享购</a>|
+                    <a href="#">友情链接</a>|
+                    <a href="#">销售联盟</a>|
+                    <a href="#">悦享购社区</a>|
+                    <a href="#">悦享购公益</a>|
+                    <a href="#">English Site</a>|
+                    <a href="#">Contact U</a>
+                </div>
+                <div class="copyright">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br />
+                    京ICP备08001421号京公网安备110108007702
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

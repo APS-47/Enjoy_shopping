@@ -1,0 +1,189 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部模块 */
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+/*登录页logo板块*/
+.register_logo {
+    position: absolute;
+    width: 250px;
+    height: 78px;
+    top: 10px;
+    left: 168px;
+}
+
+.register_logo img {
+    height: 100%;
+}
+
+.register_logo a {
+    display: inline-block;
+    height: 60px;
+}
+
+.register_logo a img:first-child {
+    width: 60px;
+}
+
+.register_logo img:last-child {
+    width: 136px;
+    margin-top: 3px;
+}
+
+/* 注册新用户和登录栏 */
+.registerarea {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.registerarea h3 .login {
+    float: right;
+    font-size: 14px;
+}
+
+.registerarea h3 .login a {
+    color: #c81523;
+}
+
+/* 输入框模块 */
+.reg_form {
+    width: 800px;
+    margin: 50px 350px 0;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.reg_form ul li:nth-child(-n+5) input {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+/* 短信验证码 */
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.reg_form ul li:first-child {
+    margin-bottom: 0px;
+}
+
+.reg_form ul li:first-child a {
+    display: block;
+    color: blue;
+    margin: 5px 246px;
+}
+
+/* 输入框右侧提示模块 */
+.reg_form ul li .error {
+    color: #c81523;
+    margin-left: 10px;
+}
+
+.message {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    background: url(../images/mess.png) no-repeat left center;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.wrong {
+    color: red;
+    background-image: url(../images/wrong.png);
+}
+
+.right {
+    color: green;
+    background-image: url(../images/right.png);
+}
+
+.reg_form ul li:nth-child(3) {
+    margin-bottom: 5px;
+}
+
+/* 安全程度模块 */
+.reg_form ul .safe {
+    padding-left: 163px;
+}
+
+.reg_form ul .safe em {
+    padding: 0 12px;
+    color: white;
+    margin: 0 2px;
+}
+
+.reg_form ul .safe em:nth-child(1) {
+    background-color: red;
+}
+
+.reg_form ul .safe em:nth-child(2) {
+    background-color: yellow;
+}
+
+.reg_form ul .safe em:nth-child(3) {
+    background-color: green;
+}
+
+/* 同意注册模块 */
+.agree {
+    padding-left: 125px;
+}
+
+.reg_form .agree input {
+    vertical-align: middle;
+}
+
+.agree a {
+    color: blue;
+}
+
+/* 提交按钮模块 */
+.btn {
+    width: 200px;
+    height: 34px;
+    background-color: rgb(228, 99, 120);
+    font-size: 14px;
+    color: #fff;
+    margin: 20px 0 0 108px;
+    border: 2px solid #e4e4e4;
+}
+
+/* footer底部模块制作开始 */
+.mod_copyright {
+    text-align: center;
+}
+
+.links {
+    margin: 15px auto;
+}
+
+.links a {
+    padding: 0 12px;
+}
+
+.copyright {
+    line-height: 20px;
+}

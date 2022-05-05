@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 网站标题 -->
+    <title>悦享购列表页-正品低价、品质保障、配送及时、轻松购物！</title>
+    <!-- 网站介绍 -->
+    <meta name="description"
+        content="悦享购-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。">
+    <!-- 网站关键词 -->
+    <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜">
+    <!-- 插入favicon图 多次更改记得ctrl+F5清除缓存-->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入初始化css样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共模块的css样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入列表页专有的css样式文件 -->
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+    <!-- 快捷导航模块开始 -->
+    <section class="shortcut">
+        <!-- 快捷导航栏左侧 -->
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>悦享购欢迎您！&nbsp;</li>
+                    <li>
+                        <a href="#" target="other">请登录</a> &nbsp;<a class="style_red enroll" href="#"
+                            target="other">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 快捷导航栏右侧 -->
+            <div class="fr">
+                <ul>
+                    <li><a href="#" target="other">我的订单</a></li>
+                    <li class="arrow-icon">
+                        <a href="#" target="other">我的悦享购</a>
+                        <div class="down">
+                            <i><a href="#">我的商品</a></i>
+                            <i><a href="#">账户余额</a></i>
+                            <i><a href="#">设置</a></i>
+                            <i><a href="#">个人中心</a></i>
+                        </div>
+                    </li>
+                    <li><a href="#" target="other">悦享购会员</a></li>
+                    <li><a href="#" target="other">企业采购</a></li>
+                    <li class="arrow-icon">
+                        <a href="#" target="other">悦享购关注</a>
+                        <div class="down">
+                            <i><a href="#">我关注的店铺</a></i>
+                            <i><a href="#">我的收藏</a></i>
+                            <i><a href="#">我的好友</a></i>
+                        </div>
+                    </li>
+                    <li class="arrow-icon">
+                        <a href="#" target="other">客户服务</a>
+                        <div class="down">
+                            <i><a href="#">联系客服</a></i>
+                            <i><a href="#">退款申请</a></i>
+                            <i><a href="#">申诉与投诉</a></i>
+                        </div>
+                    </li>
+                    <li class="arrow-icon">
+                        <a href="#" target="other">网站导航</a>
+                        <div class="down">
+                            <i><a href="#">主页</a></i>
+                            <i><a href="#">注册账号</a></i>
+                            <i><a href="#">修改密码</a></i>
+                            <i><a href="#">支付宝</a></i>
+                            <i><a href="#">微信支付</a></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 快捷导航模块结束 -->
+    <!-- header头部模块开始 -->
+    <header class="header w">
+        <!-- logo模块 -->
+        <!-- logo的SEO优化 -->
+        <div class="logo">
+            <a href="index.html" title="悦享购商城">
+                <img src="images/logo1.png" alt="">
+                <img src="images/logo2.png" alt="">
+            </a>
+        </div>
+        <!-- 秒杀模块 -->
+        <div class="sk">
+            <img src="images/sk.png" alt="">
+        </div>
+        <!-- 搜索框模块 -->
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="搜一下您想买的吧！">
+            <button>搜索</button>
+        </div>
+        <!-- 搜索热词模块 -->
+        <div class="hotwords">
+            <ul>
+                <li><a href="#" class="style_red">优惠购首发</a></li>
+                <li><a href="#">亿元优惠</a></li>
+                <li><a href="#">9.9元团购</a></li>
+                <li><a href="#">每满99减30</a></li>
+                <li><a href="#">办公用品</a></li>
+                <li><a href="#">电脑</a></li>
+                <li><a href="#">通信</a></li>
+            </ul>
+        </div>
+        <!-- 购物车模块 -->
+        <div class="shopcar">
+            <a href="#">我的购物车</a>
+            <i class="count">66</i>
+        </div>
+        <!-- header头部模块结束 -->
+    </header>
+    <!-- header头部模块结束 -->
+    <!-- nav导航栏模块开始 -->
+    <nav class="nav">
+        <div class="w">
+            <div class="sk_list">
+                <ul>
+                    <li><a href="#">极速秒杀</a></li>
+                    <li><a href="#">即将售罄</a></li>
+                    <li><a href="#">超值低价</a></li>
+                </ul>
+            </div>
+            <div class="sk_con">
+                <ul>
+                    <li><a href="#" class="style_red">小米产品</a></li>
+                    <li><a href="#">男装</a></li>
+                    <li><a href="#">女装</a></li>
+                    <li><a href="#">男鞋</a></li>
+                    <li><a href="#">母婴童装</a></li>
+                    <li><a href="#">食品</a></li>
+                    <li><a href="#">智能数码</a></li>
+                    <li><a href="#">运动户外</a></li>
+                    <li>
+                        <a href="#">更多分类</a>
+                        <div class="down">
+                            <i><a href="#">我的收藏</a></i>
+                            <i><a href="#">大众选择</a></i>
+                            <i><a href="#">促销商品</a></i>
+                            <i><a href="#">销量冠军</a></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav导航栏模块结束 -->
+    <!-- 列表页主体部分开始 -->
+    <div class="w sk_container">
+        <!-- 顶部图片 -->
+        <div class="sk_hd">
+            <img src="images/bg.png" alt="">
+            <div class="mi">
+                <div class="pic"><img src="images/mi.png" alt=""></div>
+                <div class="name">小米产品</div>
+                <div class="qg">—— &nbsp;&nbsp;正在抢购&nbsp;&nbsp; ——</div>
+            </div>
+        </div>
+        <!-- 手机部分 -->
+        <div class="sk_bd">
+            <h2>热门手机</h2>
+            <ul class="clearfix">
+                <li>
+                    <img src="images/mi2.png" alt="">
+                    <p class="phone">XiaoMi 12 Pro</p>
+                    <p class="appraise">全新骁龙8｜2K AMOLED屏幕</p>
+                    <p class="price">4699元<del>&nbsp;5600元&nbsp;</del></p>
+                    <div class="jdt">已售80%
+                        <div class="i1">
+                            <div class="i2"></div>
+                        </div>剩余<em>27</em>件
+                    </div>
+                    <a href="#">
+                        <div class="ljqg">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/mi3.png" alt="">
+                    <p class="phone">XiaoMi 12</p>
+                    <p class="appraise">全新骁龙8｜5000万主摄</p>
+                    <p class="price">3699元<del>&nbsp;5600元&nbsp;</del></p>
+                    <div class="jdt">已售80%
+                        <div class="i1">
+                            <div class="i2"></div>
+                        </div>剩余<em>66</em>件
+                    </div>
+                    <a href="#">
+                        <div class="ljqg">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/mi4.png" alt="">
+                    <p class="phone">XiaoMi 12X</p>
+                    <p class="appraise">骁龙870｜5000万主摄</p>
+                    <p class="price">3199元<del>&nbsp;5200元&nbsp;</del></p>
+                    <div class="jdt">已售80%
+                        <div class="i1">
+                            <div class="i2"></div>
+                        </div>剩余<em>29</em>件
+                    </div>
+                    <a href="#">
+                        <div class="ljqg">立即抢购</div>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/mi5.png" alt="">
+                    <p class="phone">XiaoMi 11 青春活力版</p>
+                    <p class="appraise">轻薄5G，内外皆出彩</p>
+                    <p class="price">1999元<del>&nbsp;3600元&nbsp;</del></p>
+                    <div class="jdt">已售80%
+                        <div class="i1">
+                            <div class="i2"></div>
+                        </div>剩余<em>56</em>件
+                    </div>
+                    <a href="#">
+                        <div class="ljqg">立即抢购</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 智能产品部分 -->
+        <div class="box w clearfix">
+            <h2>智能穿戴</h2>
+            <div class="left">
+                <img src="images/1.png" alt="图片出错">
+            </div>
+            <div class="right">
+                <div class="hezi">
+                    <img src="images/2.png" alt="图片出错">
+                    <a href="#">
+                        <p>Xiaomi Watch S1</p>
+                        <p class="appraise">腕事具备</p>
+                    </a>
+                    <p class="price">1099元起</p>
+                </div>
+                <div class="hezi">
+                    <img src="images/3.png" alt="图片出错">
+                    <a href="#">
+                        <p>Xiaomi真无线降噪耳机3</p>
+                        <p class="appraise">静听好声音</p>
+                    </a>
+                    <p class="price">499元</p>
+                </div>
+                <div class="hezi">
+                    <img src="images/4.png" alt="图片出错">
+                    <a href="#">
+                        <p>Redmi 手表 2</p>
+                        <p class="appraise">AMOLED高清大屏</p>
+                    </a>
+                    <p class="price">399元</p>
+                </div>
+                <div class="hezi">
+                    <img src="images/5.png" alt="图片出错">
+                    <a href="#">
+                        <p>小米手环6 NFC版</p>
+                        <p class="appraise">全屏实力</p>
+                    </a>
+                    <p class="price">259元 &nbsp;<del>279元</del></p>
+                </div>
+                <div class="hezi">
+                    <img src="images/6.png" alt="图片出错">
+                    <a href="#">
+                        <p>Redmi 手表</p>
+                        <p class="appraise">35g超轻/1.4"大屏/多功能NFC</p>
+                    </a>
+                    <p class="price">249元 &nbsp;<del>299元</del></p>
+                </div>
+                <div class="hezi">
+                    <img src="images/7.png" alt="图片出错">
+                    <a href="#">
+                        <p>Xiaomi真无线降噪耳机3 Pro</p>
+                        <p class="appraise">动态降噪 静听曼妙</p>
+                    </a>
+                    <p class="price">649元 &nbsp;<del>699元</del></p>
+                </div>
+                <div class="hezi">
+                    <img src="images/8.png" alt="图片出错">
+                    <a href="#">
+                        <p>Redmi Buds 3半入耳蓝牙耳机</p>
+                        <p class="appraise">轻巧半入耳，舒适有天分</p>
+                    </a>
+                    <p class="price">199元</p>
+                </div>
+                <div class="hezi9">
+                    <div class="littlebox1">
+                        <div class="litleft">
+                            <a href="#">
+                                <p>Redmi Buds 3 <br>青春版</p>
+                            </a>
+                            <span class="price">99元</span>
+                        </div>
+                        <div class="litright">
+                            <img src="images/9.png" alt="">
+                        </div>
+                    </div>
+                    <div class="littlebox2">
+                        <div class="litleft">
+                            <a href="#"><span class="more">了解更多</span></a>
+                        </div>
+                        <div class="litright">
+                            <img src="images/right_arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 列表页主体部分结束 -->
+    <!-- footer底部模块开始 -->
+    <footer class="footer">
+        <div class="w">
+            <!-- 首层 -->
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5 class="p1"></h5>
+                        <div class="service_text">
+                            <h4><a href="#">正品保障</a></h4>
+                            <p><a href="#">正品保障，提供发票</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="p2"></h5>
+                        <div class="service_text">
+                            <h4><a href="#">极速物流</a></h4>
+                            <p><a href="#">急速物流，急速送达</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="p3"></h5>
+                        <div class="service_text">
+                            <h4><a href="#">无忧售后</a></h4>
+                            <p><a href="#">7天无理由退换货</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="p4"></h5>
+                        <div class="service_text">
+                            <h4><a href="#">特色服务</a></h4>
+                            <p><a href="#">私人定制家电套餐</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="p5"></h5>
+                        <div class="service_text">
+                            <h4><a href="#">帮助中心</a></h4>
+                            <p><a href="#">您的物流指南</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 第二层 -->
+            <div class="mod_help">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="#">上门自提</a></dd>
+                    <dd><a href="#">极速限时达</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送费收取标准</a></dd>
+                    <dd><a href="#">海外配送</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                    <dd><a href="#">分期付款</a></dd>
+                    <dd><a href="#">邮局汇款</a></dd>
+                    <dd><a href="#">公司转账</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">价格保护</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">返修/退换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="#">夺宝岛</a></dd>
+                    <dd><a href="#">DIY装机</a></dd>
+                    <dd><a href="#">延保服务</a></dd>
+                    <dd><a href="#">悦享购E卡</a></dd>
+                    <dd><a href="#">悦享购通信</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>
+                        <img src="images/wx_cz.jpg" alt="二维码">
+                    </dd>
+                    <dd>悦享购客户端</dd>
+                </dl>
+            </div>
+            <!-- 第三层 -->
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a>|
+                    <a href="#">联系我们</a>|
+                    <a href="#">联系客服</a>|
+                    <a href="#">商家入驻</a>|
+                    <a href="#">营销中心</a>|
+                    <a href="#">手机悦享购</a>|
+                    <a href="#">友情链接</a>|
+                    <a href="#">销售联盟</a>|
+                    <a href="#">悦享购社区</a>|
+                    <a href="#">悦享购公益</a>|
+                    <a href="#">English Site</a>|
+                    <a href="#">Contact U</a>
+                </div>
+                <div class="copyright">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br />
+                    京ICP备08001421号京公网安备110108007702
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer底部模块结束 -->
+</body>
+
+</html>

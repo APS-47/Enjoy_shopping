@@ -1,0 +1,413 @@
+/* 动态秒杀模块开始 */
+/* 先给定一个盒子大小 */
+#ms {
+    position: absolute;
+    top: 122px;
+    right: 261px;
+    width: 56px;
+    height: 26px;
+}
+/* 调用动画 */
+#ms img {
+    width: 100%;
+    height: 100%;
+    animation: move 1s linear infinite;
+}
+/* 定义动画 */
+@keyframes move {
+    0% {}
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+/* 关闭按钮 */
+#ms button{
+    position: absolute;
+    top: -5px;
+    right: -40px;
+    width: 16px;
+    height: 16px;
+    line-height: 14px;
+    color:#ccc;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+/* 动态秒杀模块结束 */
+/* main主体模块开始 */
+.main{
+    height: 980px;
+    height: 455px;
+    margin: 10px 0 0 220px;
+}
+/* 中心焦点图 */
+.main .focus{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+.main .focus ul{
+    position: absolute;
+    width: 600%;
+    top: 0;
+    left: 0;
+}
+
+.main .focus ul li{
+    float: left;
+}
+.main .focus img{
+    transition: all 1.2s;
+}
+/* 图片放大 */
+.main .focus img:hover{
+    transform: scale(1.1);
+}
+/* 左右箭头 */
+.main .focus .f-left::before{
+    position: absolute;
+    top: 50%;
+    transform: translate(20px,-42px);
+    font-family:"icomoon";
+    content: "\ea44";
+    font-size: 56px;
+    color: #fff;
+}
+.main .focus .f-right::after{
+    position: absolute;
+    top: 50%;
+    transform: translate(646px,-42px);
+    font-family:"icomoon";
+    content: "\ea42";
+    font-size: 55px;
+    color: #fff;
+}
+/* 底端圆点 */
+.main .focus .cir{
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+}
+.main .focus .cir li {
+    float: left;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin:5px 13px 5px 13px;
+}
+.main .focus .cir .current{
+    background-color: #c81623;
+}
+/* 右侧模块 */
+.main .newsflash{
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+/* 右侧快报模块 */
+.newsflash .news{
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+/* 快报首行 */
+.newsflash .news .news_hd{
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+    vertical-align: middle;
+}
+.newsflash .news .news_hd h5{
+    float: left;
+    font-size: 14px;
+}
+.newsflash .news .news_hd .more{
+    float: right;
+    vertical-align: middle;
+}
+.newsflash .news .news_hd .more::after{
+    font-family: "icomoon";
+    content: "\e920";
+}
+/* 快报下方多行 */
+.newsflash .news .news_bd{
+    padding: 5px 15px 0;
+}
+.newsflash .news .news_bd ul li{
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 服务图标模块 */
+.newsflash .lifeservice{
+    height: 210px;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+/* 精灵图嵌入 */
+.newsflash .lifeservice ul{
+    width: 250px;
+    height: 205px;
+    background: url(../images/icons.png) no-repeat 3px -4px;
+}
+/* 各个小方格的大小和边框 */
+.newsflash .lifeservice ul li{
+    float: left;
+    position: relative;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+/* 选中第每行的第4个孩子不需要右边框 */
+.newsflash .lifeservice ul li:nth-child(4n){
+    border-right: none;   
+}
+/* 调整链接字体的大小和位置 */
+.newsflash .lifeservice ul li a{
+    display: block;
+    text-align: center;
+    padding: 43px 10px 0px 15px;
+}
+/* 第二方框右上角的图标 */
+.newsflash .lifeservice ul li img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* main主体模块结束 */
+/* recom推荐模块开始 */
+.recom{
+    height: 163px;
+    margin-top: 12px;
+    background-color: #ebebeb;
+}
+/* 推荐模块左侧模块 */
+.recom .recom_hd{
+    float: left;
+    width: 210px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+/* 推荐模块右侧模块 */
+.recom .recom_bd{
+    float: left;
+}
+.recom .recom_bd li{
+    position: relative;
+    float: left;
+}
+/* 把图片的高度和宽度写死，避免图片参差不齐 */
+.recom .recom_bd li img{
+    width: 245px;
+    height: 163px;
+}
+/* 只需要前三个在后面面加竖线 */
+.recom .recom_bd li:nth-child(-n+3):after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+/* recom推荐模块结束 */
+/* 猜你喜欢模块开始 */
+.guess{
+    margin-top: 20px;
+}
+/* 顶端文字 */
+.guess .guess_header h2{
+    float: left;
+    margin-left: 5px;
+} 
+.guess .guess_header h5{
+    float: right;
+    margin-right: 8px;
+    margin-top: 5px;
+} 
+.guess .guess_header img{
+    float: right;
+    margin-top: 7px;
+    margin-right: 8px;
+}
+/* 主体部分 */
+.guess_body{
+    float: left;
+    margin-top: 15px;
+}
+.guess_body>div{
+    float: left;
+    width: 200px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+.guess_body div .pic{
+    display: block;
+    height: 141px;
+}
+.guess_body div:last-child{
+    width: 205px;
+}
+.guess_body div img{
+    display: block;
+    margin: 5px auto;
+    text-align: bottom;
+}
+.guess_body div:nth-of-type(n+2){
+    margin-left: -1px;
+}
+.guess_body>div:hover{
+    position: relative;
+    border: 1px solid #c81623;
+}
+.guess_body div p:nth-of-type(1){
+    padding: 15px 13px 5px 20px;
+    width: 198px;
+    height: 55px;
+    /* 多行文本末尾省略步骤 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.guess_body div p:nth-of-type(2){
+    color: #c81623;
+    font-size: 25px;
+    padding-left:20px ;
+    padding-bottom: 20px;
+}
+/* 猜你喜欢模块结束 */
+/* 传智播客模块开始 */
+.czbk h2{
+    margin: 20px 5px;
+} 
+.czbk img{
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    width: 100%;
+}
+/* 传智播客模块结束 */
+/* 楼层区模块开始 */
+.floor .w{
+    margin-top:30px ;
+}
+/* 楼层区顶部导航栏 */
+.floor .box_hd{
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+/* 楼层区顶部导航栏左边字体 */
+.floor .box_hd h3{
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+/* 楼层区顶部导航栏右边导航栏 */
+.floor .box_hd .tab_list{
+    float: right;
+    line-height: 30px;
+}
+.floor .box_hd .tab_list ul li{
+    float: left;
+}
+.floor .box_hd .tab_list ul li a{
+    padding: 0 15px;
+}
+.floor .box_hd .tab_list ul .hot{
+    padding: 0 15px;
+    color: #c81623;
+}
+/*家用电器楼层区底部内容模块 */
+.floor .box_bd{
+    height: 361px;  
+}
+.floor .box_bd .tab_list_item>div{
+    float: left;
+}
+/* 第一个盒子 */
+.floor .box_bd .tab_list_item div:nth-child(1){
+    width: 210px;
+    height: 361px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.floor .box_bd .tab_list_item div:nth-child(1) ul{
+    padding-left:12px;
+    margin-right: 10px;
+}
+.floor .box_bd .tab_list_item div:nth-child(1) ul li{
+    float:left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+}
+/* 右侧四个盒子宽度各不同 */
+.floor .box_bd .tab_list_item div:nth-child(2){
+    width: 319px;
+    height: 361px;
+}
+/* 从第三个盒子开始的公共样式 */
+.floor .box_bd .tab_list_item div:nth-child(n+3){
+    height: 361px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+.floor .box_bd .tab_list_item div:nth-child(3){
+    width: 221px;
+}
+.floor .box_bd .tab_list_item div:nth-child(4){
+    width: 221px;
+}
+.floor .box_bd .tab_list_item div:nth-child(5){
+    width: 229px;
+}
+.floor .box_bd .tab_list_item div img{
+    width: 100%;
+}
+.floor .box_bd .tab_list_item div:nth-of-type(n+2) img{
+    height: 100%;
+}
+.floor .foot{
+    margin-top: 20px;
+}
+/* 楼层区模块结束 */
+/* 热门疯抢模块开始 */
+.remen{
+    margin-bottom: 50px;
+}
+.remen h2{
+    margin: 20px 5px;
+} 
+.remen img{
+    width: 100%;
+    border: 1px solid #ededed;
+}
+/* 热门疯抢模块结束 */
+
+
+
+
+

@@ -1,0 +1,365 @@
+/* 秒杀图标的定位 */
+.sk {
+    position: absolute;
+    left: 215px;
+    top: 40px;
+    border-left: 2px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+/* 秒杀页表左侧加粗的导航栏 */
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* 秒杀页表右侧的导航栏 */
+.sk_con ul li {
+    float: left;
+    position: relative;
+    display: block;
+    /* 行高大于盒子高度可以实现文字下移 */
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+/* 最后一个盒子更多分类的图标 */
+.nav .w .sk_con ul li:last-child>a::after {
+    content: "\e91e";
+    font-family: "icomoon";
+}
+
+/* 最后一个盒子鼠标经过时的下拉菜单 */
+.sk_con ul li .down {
+    position: absolute;
+    width: 80%;
+    top: 45px;
+    left: 9px;
+    z-index: 2;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    border-top: none;
+    display: none;
+}
+
+/* 下拉菜单中的选项 */
+.down i {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* 鼠标经过导航栏下拉框出现 */
+.sk_con ul li:hover .down {
+    display: block;
+}
+
+/* 热门手机上方的背景图片 */
+.sk_hd {
+    position: relative;
+    top: -3px;
+}
+
+/* 小米图标盒子 */
+.mi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 100px;
+    transform: translate(-50%, -40%);
+    font-size: 28px;
+    font-weight: 500;
+    color: #ff4c02;
+}
+
+/* 插入小米logo */
+.mi .pic {
+    float: left;
+    margin: 0px 10px 0 39px;
+    width: 40px;
+    height: 40px;
+}
+
+.mi img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    vertical-align: bottom;
+}
+
+.mi .name {
+    float: left;
+    text-align: center;
+    padding-left: 8px;
+}
+
+.mi .qg {
+    float: left;
+    margin: 8px 23px;
+    font-size: 20px;
+    color: #000;
+    padding-top: 2px;
+}
+
+/* 手机板块 */
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li:hover {
+    border: 2px solid #c81523;
+}
+
+.sk_container h2 {
+    margin: 20px 4px;
+}
+
+.sk_bd ul li img {
+    width: 100%;
+    height: 260px;
+}
+
+.sk_bd ul li {
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    border: 2px solid #e4e4e4;
+}
+
+.sk_bd ul li p {
+    text-align: center;
+}
+
+.sk_bd ul li .phone {
+    font-size: 18px;
+    color: #000;
+}
+
+.appraise {
+    font-size: 12px;
+    color: gray;
+    margin-top: 8px;
+}
+
+.price {
+    color: rgb(224, 15, 15);
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.price del {
+    font-size: 13px;
+    margin-left: 8px;
+    color: gray;
+}
+
+/* 进度条和销售情况模块 */
+.jdt {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.jdt .i1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    height: 15px;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 0 7px;
+    border: 1px solid #c81523;
+}
+
+.jdt .i1 .i2 {
+    float: left;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    background-color: #c81523;
+}
+
+.jdt em {
+    padding: 0 3px;
+    font-weight: 700;
+    color: #c81523;
+}
+
+/* 立即抢购按钮 */
+.ljqg {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    background-color: #c81523;
+    color: white;
+    border: 2px solid #c81523;
+}
+
+/* 智能产品模块 */
+.box {
+    margin: 0 auto 50px 0;
+}
+
+.box a:hover {
+    color: #c81523;
+}
+
+.box .left {
+    float: left;
+    width: 230px;
+    height: 628px;
+    border: 2px solid #e4e4e4;
+}
+
+.box .left:hover {
+    border: 2px solid #c81523;
+}
+
+.box .right {
+    float: right;
+    width: 970px;
+    height: 628px;
+}
+
+.box .hezi {
+    float: left;
+    width: 230px;
+    height: 309px;
+    background-color: white;
+    margin: 0px 0px 10px 10px;
+    border: 2px solid #e4e4e4;
+}
+
+.box .hezi:hover {
+    border: 2px solid #c81523;
+}
+
+.box .left>img {
+    width: 100%;
+    height: 100%;
+}
+
+.box img {
+    width: 100%;
+    height: 70%;
+}
+
+.box .nine img {
+    margin-top: 23px;
+}
+
+.box p {
+    font-size: 14px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.box .appraise {
+    font-size: 12px;
+    color: gray;
+}
+
+.box .price {
+    color: rgb(224, 15, 15);
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.box del {
+    color: gray;
+}
+
+/* 最后一个盒子（分两个小盒子） */
+.box .hezi9 {
+    float: left;
+    width: 230px;
+    height: 309px;
+    margin: 0px 0px 10px 10px;
+    border: none;
+}
+
+.littlebox1,
+.littlebox2 {
+    position: relative;
+    width: 230px;
+    height: 147px;
+    border: 2px solid #e4e4e4;
+}
+
+.littlebox1:hover,
+.littlebox2:hover {
+    border: 2px solid #c81523;
+}
+
+.littlebox1 {
+    margin-bottom: 15px;
+}
+
+.hezi9 p {
+    margin-top: 40px;
+}
+
+.hezi9 .price {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.more {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700px;
+    margin: 55px 0 0 25px;
+}
+
+.litright>img {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+}
+
+.hezi9>.litleft {
+    width: 120px;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+}
+
+.litleft p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.litleft span {
+    margin-left: 20px;
+}
+
+.hezi9>.litright {
+    width: 120px;
+    height: 150px;
+    background-color: white;
+}
+
+.litright {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
